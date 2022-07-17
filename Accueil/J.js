@@ -1,9 +1,11 @@
 let menu=document.querySelector('.menue');
 let navigation=document.querySelector('.navigation');
 let main=document.querySelector('.main');
+let racourcie=document.querySelector('.racourcie')
 menu.onclick= function(){
     navigation.classList.toggle('active');
     main.classList.toggle('active');
+    racourcie.classList.toggle('active')
 
 };
 let list=document.querySelectorAll(".navigation li");

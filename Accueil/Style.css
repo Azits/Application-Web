@@ -185,14 +185,20 @@ body{
     width: 100%;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(4, 0fr);
     padding: 0 10px;
     grid-gap: 30px;
     text-align: center;
    
 
 }
-.racourcie .boite{
+.racourcie.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.racourcie .boite,
+.racourcie .boite-ajout{
     border: 1px solid var(--grey);
     display: flex;
     padding: 20px;
@@ -203,7 +209,8 @@ body{
     justify-content: center;
     transition: 0.75;
 }
-.racourcie .boite .content{
+.racourcie .boite .content,
+.racourcie .boite-ajout .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,7 +228,8 @@ body{
     justify-content: center;
     color: var(--black2);
 }
-.racourcie .boite .image{
+.racourcie .boite .image,
+.racourcie .boite-ajout .image{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,7 +237,8 @@ body{
     flex-wrap: nowrap;
     padding: 0 10px 0 20px;
 }
-.racourcie .boite .image ion-icon{
+.racourcie .boite .image ion-icon,
+.racourcie .boite-ajout .image ion-icon{
     font-size: 4em;
     pointer-events: none;
 }
@@ -241,6 +250,45 @@ body{
 .racourcie .boite:hover .image{
     color: var(--white);
 }
+.racourcie .boite-ajout{
+    background-color: #1BA0F2;
+    color: #fff;
+}
+
+.ajout p{
+    font-size: 1.75em;
+    font-weight: bold;
+}
+.moyenneGeneral{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.moyenneGeneral .content{
+    border-radius: 4px;
+    border: 1px solid var(--grey);
+    padding: 20px;
+    background: var(--white);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 7px 25px rgb(0, 0,0,0.08);
+    text-align: center;
+    cursor:default;
+    background-color: #4DFF00;
+}
+.moyenneGeneral .content p{
+    color: var(--black2);
+}
+.moyenneGeneral .content span{
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--blue);
+}
+
 
 .main .tabledematiere{
     position: relative;
