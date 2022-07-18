@@ -184,11 +184,12 @@ body{
 .racourcie {
     width: 100%;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 0fr);
+    display: flex;
+    align-items: center;
     padding: 0 10px;
     grid-gap: 30px;
     text-align: center;
+
    
 
 }
@@ -197,8 +198,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.racourcie .boite,
-.racourcie .boite-ajout{
+.racourcie .boite{
     border: 1px solid var(--grey);
     display: flex;
     padding: 20px;
@@ -209,8 +209,7 @@ body{
     justify-content: center;
     transition: 0.75;
 }
-.racourcie .boite .content,
-.racourcie .boite-ajout .content{
+.racourcie .boite .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,8 +227,7 @@ body{
     justify-content: center;
     color: var(--black2);
 }
-.racourcie .boite .image,
-.racourcie .boite-ajout .image{
+.racourcie .boite .image{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,6 +251,24 @@ body{
 .racourcie .boite-ajout{
     background-color: #1BA0F2;
     color: #fff;
+    height: 60px;
+    border-radius: 20px;
+}
+.racourcie .boite-ajout button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    background-color:#1BA0F2 ;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.boite-ajout button span{
+    font-size: 1.75em;
+    font-weight: bold;
 }
 
 .ajout p{

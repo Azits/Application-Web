@@ -15,14 +15,11 @@ function activeLink(){
     this.classList.add("hovered");
     
 }
-list.forEach((item)=>
-item.addEventListener("mouseover",activeLink))
+let tbody=document.getElementsByTagName("tbody");
 
-document.querySelector("aideEnvoi").addEventListener("submit",submitForm);
-
-function submitForm(e){
-    e.preventDefault();
-    let email=document.querySelector(".email").value;
-    let message=document.querySelector(".message").value;
-    saveContectInfo(email,message);
+const modalContener=document.querySelector(".modalContener");
+const modaltrigger= document.querySelectorAll(".modal-trigger");
+modaltrigger.forEach(trigger => trigger.addEventListener("click",toogleModal))
+function toogleModal(){
+    modalContener.classList.toggle("active");
 }

@@ -3,11 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="mandal.css">
         <title> Tuto</title>
         <script src="https://kit.fontawesome.com/95aba64064.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    
+<!--//////////////////////////////Modal/////////////////////////////////////////:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////:-->
+        <div class="modalContener">
+            <div class="overlay modal-trigger">  </div>
+            <div class="modal">
+                <button class="closeModal modal-trigger" ><ion-icon name="close-outline"></ion-icon></button>
+                <h1>Ajouter Matiere</h1>
+                <form action="#">
+            
+                    <label for="matiere">Matiere :</label>
+                    <input type="text" name="matiere" id="matiere" maxlength="21" placeholder="exemple: mathématique">
+                    <label for="coeff">coefficient :</label>
+                    <input type="number" name="coeff" id="coeff" max="100" min="1" placeholder="exemple:0.5,2, 50%">
+                    <button type="submit" name="enregistrer" id="enregistrer">Enregistrer</button>
+
+                </form>
+        
+
+        
+            </div>
+
+        </div>
+
         <div class="navigation">
             <ul>
                 <li><a href="#"><span class="icon"><ion-icon name="logo-windows"></ion-icon></span> <span class="tittle"> Brand name</span></a></li>
@@ -70,14 +92,13 @@
                     </div>
                 </div>
                 <div class="boite-ajout">
-                    <div class="content">
-                        <div class="ajout">
-                            <p>Ajouter</p>
+                    <button class="Ajouter modal-trigger">
+                        <span>Ajouter</span> 
+                        <div class="image">
+                            <ion-icon name="add-circle-outline"></ion-icon>
                         </div>
-                    </div>
-                    <div class="image">
-                        <ion-icon name="add-circle-outline"></ion-icon>
-                    </div>
+                    </button>
+                       
                 </div>
             </div>
             <div class="moyenneGeneral">
