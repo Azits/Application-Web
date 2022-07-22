@@ -57,6 +57,7 @@ body{
     border-radius: 10px;
     box-shadow: 0 5px 5px rgb(0, 0, 0.1); 
     width: 100%;
+    padding: 10px;
 }
 .contener form .forgotPW {
     display: flex;
@@ -69,6 +70,7 @@ body{
 }
 .contener form .forgotPW input{
     margin-right: 9px;
+    padding:10px;
 }
 .contener form .forgotPW a{
     text-decoration: none;

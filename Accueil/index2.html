@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/95aba64064.js" crossorigin="anonymous"></script>
     </head>
     <body>
-<!--//////////////////////////////Modal/////////////////////////////////////////:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////:-->
+<!--////////////////////////////// Fenetre Modal/////////////////////////////////////////:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////:-->
         <div class="modalContener">
             <div class="overlay modal-trigger">  </div>
             <div class="modal">
@@ -19,7 +19,7 @@
                     <label for="matiere">Matiere :</label>
                     <input type="text" name="matiere" id="matiere" maxlength="21" placeholder="exemple: mathématique">
                     <label for="coeff">coefficient :</label>
-                    <input type="number" name="coeff" id="coeff" max="100" min="1" placeholder="exemple:0.5,2, 50%">
+                    <input type="number" name="coeff" id="coeff" pattern="[1-100]{,3}" placeholder="exemple:0.5,2, 50%">
                     <button type="submit" name="enregistrer" id="enregistrer">Enregistrer</button>
 
                 </form>
@@ -34,10 +34,8 @@
             <ul>
                 <li><a href="#"><span class="icon"><ion-icon name="logo-windows"></ion-icon></span> <span class="tittle"> Brand name</span></a></li>
                 <li><a href="index2.html"><span class="icon"><ion-icon name="home-outline"></ion-icon></span> <span class="tittle"> Acceuille</span></a></li>
-                <!--<li><a href="#"><span class="icon"><ion-icon name="people-outline"></ion-icon></span> <span class="tittle" > Clients</span></a></li>
-                <li><a href="#"><span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span> <span class="tittle"> Message</span></a></li>-->
                 <li><a href="aide.html"><span class="icon"><ion-icon name="help-outline"></ion-icon></span> <span class="tittle"> Aide </span></a></li>
-                <li><a href="#"><span class="icon"><ion-icon name="settings-outline"></ion-icon></span> <span class="tittle"> Paramettre</span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="settings-outline"> </ion-icon></span><span class="tittle"> Paramettre</span></a></li>
                 <li><a href="Password.html"><span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> <span class="tittle"> Mot de Pass</span></a></li>
                 <li><a href="/IdentificationPage/index.html"><span class="icon"><ion-icon name="log-out-outline"></ion-icon></span> <span class="tittle"> Deconection</span></a></li>
             </ul>
@@ -126,40 +124,40 @@
                                 <td>Mathématique</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
                                 <td></td>
-                                <td><ion-icon name="add-outline"></ion-icon></td>
+                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr> 
                                    
                                 <td>Science De La Matiere</td>
                                 <td> <ion-icon name="bar-chart-outline"></ion-icon></td>
                                 <td></td>
-                                <td><ion-icon name="add-outline"></ion-icon></td>
+                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
                                 <td>Informatique</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
                                 <td></td>
-                                <td><ion-icon name="add-outline"></ion-icon></td>
+                                <td class="addnote"> <ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr> 
                                     
                                 <td>Langue</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
                                 <td></td>
-                                <td><ion-icon name="add-outline"></ion-icon></td>
+                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                              <tr> 
                                     
                                 <td>Sport</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
                                 <td></td>
-                                <td><ion-icon name="add-outline"></ion-icon></td>
+                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
                                 <td>Pix</td>
                                 <td> <ion-icon name="bar-chart-outline"></ion-icon></td>
                                 <td></td>
-                                <td><ion-icon name="add-outline"></ion-icon></td>
+                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                         </tbody>
                         <div class="Moyenne">
