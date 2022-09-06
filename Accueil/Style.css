@@ -205,9 +205,9 @@ body{
     border-radius: 20px;
     position: relative;
     box-shadow: 0 7px 25px rgb(0, 0,0,0.08);
-    cursor: pointer;
     justify-content: center;
     transition: 0.75;
+    cursor: default;
 }
 .racourcie .boite .content{
     display: flex;
@@ -215,17 +215,20 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    
 }
 .racourcie .boite .content .moyenne{
     color: var(--blue);
     font-size: 1.75em;
     font-weight: bold;
+    cursor: default;
 }
 .racourcie .boite .content .matiere{
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--black2);
+    cursor: default;
 }
 .racourcie .boite .image{
     display: flex;
@@ -239,14 +242,6 @@ body{
 .racourcie .boite-ajout .image ion-icon{
     font-size: 4em;
     pointer-events: none;
-}
-.racourcie .boite:hover{
-    background: var(--blue);
-}
-.racourcie .boite:hover .moyenne, 
-.racourcie .boite:hover .matiere,
-.racourcie .boite:hover .image{
-    color: var(--white);
 }
 .racourcie .boite-ajout{
     background-color: #1BA0F2;
@@ -275,6 +270,17 @@ body{
     font-size: 1.75em;
     font-weight: bold;
 }
+#nouveauMatiere #enregistrer{
+    text-align: center;
+    background-color: #4DFF00;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
 .moyenneGeneral{
     width: 100%;
     position: relative;
@@ -307,7 +313,7 @@ body{
 
 
 .main .tabledematiere{
-    position: relative;
+    
     margin-top: 20px;
     width: 100%;
     padding: 20px;
@@ -321,6 +327,7 @@ body{
     box-shadow: 0 7px 25px rgba(0,0,0, 0.08);
     border-radius: 10px;
     box-sizing: border-box;
+    
     
 
 }

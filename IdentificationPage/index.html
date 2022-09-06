@@ -9,17 +9,18 @@
         <div class="contener">
             <h1>LOGING</h1>
 
-            <form method="get" action="config.php" name="Formulaire" >
+            <form method="get" action="#" name="Formulaire" id="connection">
                 <div class="inputFealds">
-                    <input type="text" name="identifiant" placeholder="Username" size="20" required>
-                    <input type="password" name="password" placeholder="Password" size="20" required>
+                    <input type="text" name="identifiant" placeholder="Username" size="20" required id="identifiant">
+                    <input type="password" name="password" placeholder="Password" size="20" required id="password">
                 </div> 
+                <p style="color : red;" id="erreur"></p>
                 <div class="forgotPW">
                     <input type="checkbox" value="1" name="Remember" > Remember me 
                     <a href="Forgot_Password.html"> Forgot Password?</a>
                 </div>
                 <div class="conection">
-                   <button type="submit" name="connection"  >LOGING</button>  
+                   <input type="submit" value="connection" id="boutton"> 
                 </div>
                 <div class="creatCompt">
                     <p>Your are not un member? </p>

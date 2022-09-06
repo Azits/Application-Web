@@ -14,13 +14,12 @@
             <div class="modal">
                 <button class="closeModal modal-trigger" ><ion-icon name="close-outline"></ion-icon></button>
                 <h1>Ajouter Matiere</h1>
-                <form action="#">
-            
+                <form id="nouveauMatiere">
                     <label for="matiere">Matiere :</label>
                     <input type="text" name="matiere" id="matiere" maxlength="21" placeholder="exemple: mathématique">
                     <label for="coeff">coefficient :</label>
                     <input type="number" name="coeff" id="coeff" pattern="[1-100]{,3}" placeholder="exemple:0.5,2, 50%">
-                    <button type="submit" name="enregistrer" id="enregistrer">Enregistrer</button>
+                    <input type="submit" value="Enregistrer" id="enregistrer">
 
                 </form>
         
@@ -29,6 +28,7 @@
             </div>
 
         </div>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
         <div class="navigation">
             <ul>
@@ -106,6 +106,48 @@
                 </div>
             </div>
             <div class="tabledematiere">
+<!--///////////////////////////////////////////////////////Modal Ajout Note///////////////////////////////////////////////////-->
+
+<!--               <div class="modalAjoutNote">
+                    <div class="matiere" id="math">
+                        <h3 >Mathématique</h3>
+                        <input type="number" placeholder="Entrez une note">
+                        <input type="number" placeholder="exemple: 0.5">
+                        <input type="submit" value="AJOUTER" id="ajouter">
+                    </div>
+                    <div class="matiere" id="scienceDeLaMatiere">
+                        <h3 >SDM</h3>
+                        <input type="number" placeholder="Entrez une note">
+                        <input type="number" placeholder="exemple: 0.5">
+                        <input type="submit" value="AJOUTER" id="ajouter">
+                    </div>
+                    <div class="matiere" id="informatique">
+                        <h3 >informatique</h3>
+                        <input type="number" placeholder="Entrez une note">
+                        <input type="number" placeholder="exemple: 0.5">
+                        <input type="submit" value="AJOUTER" id="ajouter">
+                    </div>
+                    <div class="matiere" id="langue">
+                        <h3 >Langue</h3>
+                        <input type="number" placeholder="Entrez une note">
+                        <input type="number" placeholder="exemple: 0.5">
+                        <input type="submit" value="AJOUTER" id="ajouter">
+                    </div>
+                    <div class="matiere" id="sport">
+                        <h3 >Sport</h3>
+                        <input type="number" placeholder="Entrez une note">
+                        <input type="number" placeholder="exemple: 0.5">
+                        <input type="submit" value="AJOUTER" id="ajouter">
+                    </div>
+                    <div class="matiere" id="pix">
+                        <h3 >PIX</h3>
+                        <input type="number" placeholder="Entrez une note">
+                        <input type="number" placeholder="exemple: 0.5">
+                        <input type="submit" value="AJOUTER" id="ajouter">
+                    </div>
+                </div>
+--> 
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
                 <div class="content">
                     <div class="title">
                         <h2> Table Des Matiere</h2>
@@ -123,41 +165,83 @@
                                     
                                 <td>Mathématique</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
-                                <td></td>
-                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
+                                <td id="math">
+                                    <div class="matiere" >
+                                        <h3 >Mathématique</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" id="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr> 
                                    
                                 <td>Science De La Matiere</td>
                                 <td> <ion-icon name="bar-chart-outline"></ion-icon></td>
-                                <td></td>
-                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
+                                <td style="width:50px;" id="scienceDeLaMatiere">
+                                    <div class="matiere" >
+                                        <h3 >SDM</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" id="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
                                 <td>Informatique</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
-                                <td></td>
-                                <td class="addnote"> <ion-icon name="add-outline"></ion-icon></td>
+                                <td id="informatique">
+                                    <div class="matiere" id="informatique">
+                                        <h3 >informatique</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" id="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"> <ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr> 
                                     
                                 <td>Langue</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
-                                <td></td>
-                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
+                                <td id="langue"> 
+                                    <div class="matiere" >
+                                    <h3 >Langue</h3>
+                                    <input type="number" placeholder="Entrez une note">
+                                    <input type="number" placeholder="exemple: 0.5">
+                                    <input type="submit" value="AJOUTER" id="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                              <tr> 
                                     
                                 <td>Sport</td>
                                 <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
-                                <td></td>
-                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
+                                <td id="sport">
+                                    <div class="matiere" id="sport">
+                                    <h3 >Sport</h3>
+                                    <input type="number" placeholder="Entrez une note">
+                                    <input type="number" placeholder="exemple: 0.5">
+                                    <input type="submit" value="AJOUTER" id="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
                                 <td>Pix</td>
                                 <td> <ion-icon name="bar-chart-outline"></ion-icon></td>
-                                <td></td>
-                                <td class="addnote"><ion-icon name="add-outline"></ion-icon></td>
+                                <td id="pix">
+                                    <div class="matiere" id="pix">
+                                        <h3 >PIX</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" id="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
                         </tbody>
                         <div class="Moyenne">
