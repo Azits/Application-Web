@@ -1,3 +1,6 @@
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let menu=document.querySelector('.menue');
 let navigation=document.querySelector('.navigation');
 let main=document.querySelector('.main');
@@ -30,9 +33,9 @@ const addNotes=document.querySelectorAll(".addNotes");
 for (const addNote of addNotes){
     addNote.addEventListener("click", function(){
 
-        let matieres=document.querySelectorAll(".matiere");
         addNotes[0].onclick=function(){
-            document.getElementById("math").classList.toggle("afficher");
+            document.querySelectorAll("#math  #MoyenneMath").classList.toggle("afficher");
+            
         }
         addNotes[1].onclick=function(){
             document.getElementById("scienceDeLaMatiere").classList.toggle("afficher");
@@ -52,51 +55,81 @@ for (const addNote of addNotes){
 
     });
 }
-////////////////////////////////////////////////Donné sur les matiere/////////////////////////////////////////////
-function Moyenne(matiere){
-    let tailleTableau=matiere.notes.length;
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    let somme=0;
+function Moyenne(T){
     let moyenne=0;
-    for(let i=0; i<tailleTableau; i++){
-        somme = matiere.notes[i]+somme;
+    
+
+    for (let i=0; i<T.length; i++ ){
+      moyenne= T[i]+moyenne;
     }
-    moyenne=somme/tailleTableau;
     return moyenne;
 
 }
+function noteCoeff(note,coeffiscient){
+    let noteFinal=0;
+    if (coeffiscient>0 && coeffiscient<= 1){
+        noteFinal=note*coeffiscient;
+    }
+    else if (coeffiscient>1 && coeffiscient<=100){
+        noteFinal=note*coeffiscient/100;
+    }
+    else{
+        alert("veuillez sesir un coeffiscient valide")
+    }
+    
+}
+function ajouterNotesAvecCoefficient(matiere,notes){
+    matiere.notesAvecCoeffiscient.push(notes);
+}
+
 const math={
     notes:[20,10],
+    notesAvecCoeffiscient:[],
     coeffiscient:12,
-    moyenne:Moyenne(math),
+    moyenne:0,
 };
-const scienceDeLaMatiere={
-    notes:[],
-    coeffiscient:6,
-    moyenne:Moyenne(math),
-};
-const Informatique={
-    notes:[],
-    coeffiscient:6,
-    moyenne:Moyenne(math),
-};
-const Langue={
-    notes:[],
-    coeffiscient:2,
-    moyenne:Moyenne(math),
-};
-const sport={
-    notes:[],
-    coeffiscient:1,
-    moyenne:Moyenne(math),
-};
-const Pix={
-    notes:[],
-    coeffiscient:3,
-    moyenne:Moyenne(math),
-};
+ajouterNotesAvecCoefficient(math,noteCoeff(12,50));
+math.moyenne=Moyenne(math.notesAvecCoeffiscient);
 
 
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const Ajouter=document.querySelectorAll(".ajouter");
+var moyenneMath=document.getElementById("MoyenneMath");
+
+for (const ajouter of Ajouter){
+    ajouter.addEventListener("click",function(){
+        Ajouter[0].onclick=function(){
+            document.getElementById("math").classList.remove("afficher");
+            ajouterNotesAvecCoefficient(math,noteCoeff(parseFloat(document.getElementById("Math").value),parseFloat(document.getElementById("coeffMath").value )));
+            math.moyenne=Moyenne(math.notesAvecCoeffiscient);
+            let moyenne=math.moyenne;
+            let placeAfffichage=document.getElementById("MoyenneMath");
+            placeAfffichage.innerHTML=moyenne;
+            
+            
+        }
+        Ajouter[1].onclick=function(){
+            document.getElementById("scienceDeLaMatiere").classList.remove("afficher");
+        }
+        Ajouter[2].onclick=function(){
+            document.getElementById("informatique").classList.remove("afficher");
+        }
+        Ajouter[3].onclick=function(){
+            document.getElementById("langue").classList.remove("afficher");
+        }
+        Ajouter[4].onclick=function(){
+            document.getElementById("sport").classList.remove("afficher");
+        }
+        Ajouter[5].onclick=function(){
+            document.getElementById("pix").classList.remove("afficher");
+        }
+    })
+}
 
 
