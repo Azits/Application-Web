@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="mandal.css">
+        <title> ProjetNote</title>
+        <script src="https://kit.fontawesome.com/95aba64064.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!--////////////////////////////// Fenetre Modal/////////////////////////////////////////:///////////////////////////////////////////////////////////////////////////////////////////////////////////////////:-->
+        <div class="modalContener">
+            <div class="overlay modal-trigger">  </div>
+            <div class="modal">
+                <button class="closeModal modal-trigger" ><ion-icon name="close-outline"></ion-icon></button>
+                <h1>Ajouter Matiere</h1>
+                <form id="nouveauMatiere">
+                    <label for="matiere">Matiere :</label>
+                    <input type="text" name="matiere" id="matiere" maxlength="21" placeholder="exemple: mathématique">
+                    <label for="coeff">coefficient :</label>
+                    <input type="number" name="coeff" id="coeff" pattern="[1-100]{,3}" placeholder="exemple:0.5,2, 50%">
+                    <input type="submit" value="Enregistrer" id="enregistrer">
+
+                </form>
+        
+
+        
+            </div>
+
+        </div>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="navigation">
+            <ul>
+                <li><a href="#"><span class="icon"><ion-icon name="logo-windows"></ion-icon></span> <span class="tittle"> AZITS</span></a></li>
+                <li><a href="index2.html"><span class="icon"><ion-icon name="home-outline"></ion-icon></span> <span class="tittle"> Acceuille</span></a></li>
+                <li><a href="aide.html"><span class="icon"><ion-icon name="help-outline"></ion-icon></span> <span class="tittle"> Aide </span></a></li>
+                <li><a href="#"><span class="icon"><ion-icon name="settings-outline"> </ion-icon></span><span class="tittle"> Paramettre</span></a></li>
+                <li><a href="Password.html"><span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> <span class="tittle"> Mot de Pass</span></a></li>
+                <li><a href="/index.html"><span class="icon"><ion-icon name="log-out-outline"></ion-icon></span> <span class="tittle"> Deconection</span></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top">
+                <span class="menue"><ion-icon name="menu-outline"></span> 
+                <img src="/Image/img1.jpg"> 
+            </div>
+            <div class="racourcie">
+                <div class="boite">
+                    <div class="content">
+                        <div class="moyenne">
+                            <span>15.00/20</span>
+                        </div>
+                        <div class="matiere">
+                            <p>Mathématique</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <ion-icon name="calculator-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="boite">
+                    <div class="content">
+                        <div class="moyenne">
+                            <span>15.00/20</span>
+                        </div>
+                        <div class="matiere">
+                            <p>BDAPLP </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <ion-icon name="flask-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="boite">
+                    <div class="content">
+                        <div class="moyenne">
+                            <span>15.00/20</span>
+                        </div>
+                        <div class="matiere">
+                            <p>Programation</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="boite-ajout">
+                    <button class="Ajouter modal-trigger">
+                        <span>Ajouter</span> 
+                        <div class="image">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                       
+                </div>
+            </div>
+            <div class="moyenneGeneral">
+                <div class="content">
+                    <p> Moyenne General</p>
+                    <span id="moyenne"> 15/20</span>
+                </div>
+            </div>
+            <div class="tabledematiere">
+
+                <div class="content">
+                    <div class="title">
+                        <h2> Table Des Matiere</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr> 
+                                <td> Matiere</td>
+                                <td> State</td>
+                                <td>Moyenne</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> 
+                                    
+                                <td>Mathématique</td>
+                                <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
+                                <td>
+                                    <span id="MoyenneMath"> </span>
+                                    <div class="matiere" id="math">
+                                        <h3 >Mathématique</h3>
+                                        <input type="number" placeholder="Entrez une note" required maxlength="2" id="Math" value="">
+                                        <input type="number" placeholder="coeff" id="coeffMath">
+                                        <input type="submit" value="AJOUTER" class="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
+                            </tr>
+                            <tr> 
+                                   
+                                <td>BDAPLP</td>
+                                <td> <ion-icon name="bar-chart-outline"></ion-icon></td>
+                                <td style="width:50px;">
+                                    <div class="matiere" id="scienceDeLaMatiere">
+                                        <h3 >BDAPLP</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" class="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
+                            </tr>
+                            <tr>
+                                <td>Programation</td>
+                                <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
+                                <td >
+                                    <div class="matiere" id="informatique">
+                                        <h3 >Programation</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" class="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"> <ion-icon name="add-outline"></ion-icon></td>
+                            </tr>
+                            <tr> 
+                                    
+                                <td>Langue</td>
+                                <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
+                                <td > 
+                                    <div class="matiere" id="langue">
+                                    <h3 >Langue</h3>
+                                    <input type="number" placeholder="Entrez une note">
+                                    <input type="number" placeholder="exemple: 0.5">
+                                    <input type="submit" value="AJOUTER" class="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
+                            </tr>
+                             <tr> 
+                                    
+                                <td>Sport</td>
+                                <td><ion-icon name="bar-chart-outline"></ion-icon> </td>
+                                <td >
+                                    <div class="matiere" id="sport">
+                                    <h3 >Sport</h3>
+                                    <input type="number" placeholder="Entrez une note">
+                                    <input type="number" placeholder="exemple: 0.5">
+                                    <input type="submit" value="AJOUTER" class="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
+                            </tr>
+                            <tr>
+                                <td>Pix</td>
+                                <td> <ion-icon name="bar-chart-outline"></ion-icon></td>
+                                <td >
+                                    <div class="matiere" id="pix">
+                                        <h3 >PIX</h3>
+                                        <input type="number" placeholder="Entrez une note">
+                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="submit" value="AJOUTER" class="ajouter">
+                                    </div>
+                                </td>
+                                <td class="addNotes"><ion-icon name="add-outline"></ion-icon></td>
+                            </tr>
+                        </tbody>
+                        <div class="Moyenne">
+                            
+                        </div>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="J.js">
+        </script>
+    </body>
+</html>
