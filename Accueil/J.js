@@ -34,7 +34,7 @@ for (const addNote of addNotes){
     addNote.addEventListener("click", function(){
 
         addNotes[0].onclick=function(){
-            document.querySelectorAll("#math  #MoyenneMath").classList.toggle("afficher");
+            document.getElementById("math").classList.toggle("afficher");
             
         }
         addNotes[1].onclick=function(){
@@ -106,13 +106,6 @@ for (const ajouter of Ajouter){
     ajouter.addEventListener("click",function(){
         Ajouter[0].onclick=function(){
             document.getElementById("math").classList.remove("afficher");
-            ajouterNotesAvecCoefficient(math,noteCoeff(parseFloat(document.getElementById("Math").value),parseFloat(document.getElementById("coeffMath").value )));
-            math.moyenne=Moyenne(math.notesAvecCoeffiscient);
-            let moyenne=math.moyenne;
-            let placeAfffichage=document.getElementById("MoyenneMath");
-            placeAfffichage.innerHTML=moyenne;
-            
-            
         }
         Ajouter[1].onclick=function(){
             document.getElementById("scienceDeLaMatiere").classList.remove("afficher");

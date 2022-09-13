@@ -11,23 +11,26 @@
 
             <form method="get" action="#" name="Formulaire" id="connection">
                 <div class="inputFealds">
-                    <input type="text" name="identifiant" placeholder="Username" size="20" required id="identifiant">
-                    <input type="password" name="password" placeholder="Password" size="20" required id="password">
+                    <input type="text" id="Pseudonyme" placeholder="Pseudonyme" size="20" required >
+                    <input type="password" id="password" placeholder="Mot de passe" size="20" required>
                 </div> 
                 <p style="color : red;" id="erreur"></p>
                 <div class="forgotPW">
-                    <input type="checkbox" value="1" name="Remember" > Remember me 
-                    <a href="Forgot_Password.html"> Forgot Password?</a>
+                    <input type="checkbox" value="1" name="Remember" > se souvenir de moi 
+                    <a href="Forgot_Password.html"> mot de passe oublié?</a>
                 </div>
                 <div class="conection">
-                   <input type="submit" value="connection" id="boutton"> 
+                  <!-- <input type="submit" value="connection" id="boutton"> -->
+                  <a href="/Accueil/index2.html" id="LienConnection">CONNECTION</a>
                 </div>
                 <div class="creatCompt">
-                    <p>Your are not un member? </p>
-                    <a href="inscription.html"> Creat acount </a>
+                    <p>vous avez pas encore de compte? </p>
+                    <a href="inscription.html"> créer un compte </a>
                 </div>
+                
 
             </form>
         </div>
+        <script src="Js.js" ></script>
     </body>
 </html>

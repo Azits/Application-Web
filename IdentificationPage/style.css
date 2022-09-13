@@ -91,7 +91,7 @@ body{
     width: 90%;
 }
 
-.contener form .conection #boutton{
+.contener form .conection a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +104,7 @@ body{
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+    text-decoration: none;
 
 }
 .contener form .creatCompt{
