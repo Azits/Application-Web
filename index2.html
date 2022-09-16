@@ -16,9 +16,9 @@
                 <h1>Ajouter Matiere</h1>
                 <form id="nouveauMatiere">
                     <label for="matiere">Matiere :</label>
-                    <input type="text" name="matiere" id="matiere" maxlength="21" placeholder="exemple: mathématique">
+                    <input type="text" name="matiere" id="matiere" maxlength="21" required placeholder="exemple: mathématique">
                     <label for="coeff">coefficient :</label>
-                    <input type="number" name="coeff" id="coeff" pattern="[1-100]{,3}" placeholder="exemple:0.5,2, 50%">
+                    <input type="number" name="coeff" id="coeff" pattern="[1-100]{,3}" required placeholder="exemple:0.5,2, 50%">
                     <input type="submit" value="Enregistrer" id="enregistrer">
 
                 </form>
@@ -125,7 +125,7 @@
                                     <div class="matiere" id="math">
                                         <h3 >Mathématique</h3>
                                         <input type="number" placeholder="Entrez une note" required maxlength="2" id="Math" value="">
-                                        <input type="number" placeholder="coeff" id="coeffMath">
+                                        <input type="number" placeholder="coeff" required id="coeffMath">
                                         <input type="submit" value="AJOUTER" class="ajouter">
                                     </div>
                                 </td>
@@ -138,8 +138,8 @@
                                 <td style="width:50px;">
                                     <div class="matiere" id="scienceDeLaMatiere">
                                         <h3 >BDAPLP</h3>
-                                        <input type="number" placeholder="Entrez une note">
-                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="number" required placeholder="Entrez une note">
+                                        <input type="number" required placeholder="exemple: 0.5">
                                         <input type="submit" value="AJOUTER" class="ajouter">
                                     </div>
                                 </td>
@@ -151,8 +151,8 @@
                                 <td >
                                     <div class="matiere" id="informatique">
                                         <h3 >Programation</h3>
-                                        <input type="number" placeholder="Entrez une note">
-                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="number" required placeholder="Entrez une note">
+                                        <input type="number" required placeholder="exemple: 0.5">
                                         <input type="submit" value="AJOUTER" class="ajouter">
                                     </div>
                                 </td>
@@ -165,8 +165,8 @@
                                 <td > 
                                     <div class="matiere" id="langue">
                                     <h3 >Langue</h3>
-                                    <input type="number" placeholder="Entrez une note">
-                                    <input type="number" placeholder="exemple: 0.5">
+                                    <input type="number" required placeholder="Entrez une note">
+                                    <input type="number" required placeholder="exemple: 0.5">
                                     <input type="submit" value="AJOUTER" class="ajouter">
                                     </div>
                                 </td>
@@ -179,8 +179,8 @@
                                 <td >
                                     <div class="matiere" id="sport">
                                     <h3 >Sport</h3>
-                                    <input type="number" placeholder="Entrez une note">
-                                    <input type="number" placeholder="exemple: 0.5">
+                                    <input type="number" required placeholder="Entrez une note">
+                                    <input type="number" required placeholder="exemple: 0.5">
                                     <input type="submit" value="AJOUTER" class="ajouter">
                                     </div>
                                 </td>
@@ -192,8 +192,8 @@
                                 <td >
                                     <div class="matiere" id="pix">
                                         <h3 >PIX</h3>
-                                        <input type="number" placeholder="Entrez une note">
-                                        <input type="number" placeholder="exemple: 0.5">
+                                        <input type="number" required placeholder="Entrez une note">
+                                        <input type="number" required placeholder="exemple: 0.5">
                                         <input type="submit" value="AJOUTER" class="ajouter">
                                     </div>
                                 </td>
